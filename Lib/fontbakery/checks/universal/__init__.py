@@ -2863,7 +2863,7 @@ def com_google_fonts_check_allah_ligature(ttFont):
     plain_allah = shape("الله")
     allah_with_tashkeel = shape("اللَّهُ")
 
-    if plain_allah in allah_with_tashkeel:
+    if plain_allah in allah_with_tashkeel.split("|"):
         yield FAIL, Message(
             "wrong-allah-with-tashkeel",
             "The allah ligature is incorrectly formed in the presence of tashkeel marks. ",
