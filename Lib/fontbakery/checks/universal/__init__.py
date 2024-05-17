@@ -2868,3 +2868,7 @@ def com_google_fonts_check_allah_ligature(ttFont):
             "wrong-allah-with-tashkeel",
             "The basic allah ligature (U+FDF2) is used in the presence of tashkeel marks. ",
         )
+
+    # TODO:
+    # add check that checks whether the damma is placed on the heh, not the lam
+    # see IBM Plex Sans Arabic v1.004
