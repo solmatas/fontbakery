@@ -2866,5 +2866,5 @@ def com_google_fonts_check_allah_ligature(ttFont):
     if plain_allah in allah_with_tashkeel.split("|"):
         yield FAIL, Message(
             "wrong-allah-with-tashkeel",
-            "The allah ligature is incorrectly formed in the presence of tashkeel marks. ",
+            "The basic allah ligature (U+FDF2) is used in the presence of tashkeel marks. ",
         )
