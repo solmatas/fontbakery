@@ -2853,7 +2853,10 @@ def com_google_fonts_check_allah_ligature(ttFont):
 
     # Even though the font contains the allah ligature, it's generally not used
     if shape("الله") != allah_glyphname:
-        yield PASS, "The allah ligature is present but not substituted for plain 'allah' input string."
+        yield PASS, (
+            "The allah ligature is present but not substituted for "
+            "plain 'allah' input string."
+        )
         return
 
     # The allah ligature is used, so we need to check if it's correctly formed
